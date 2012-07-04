@@ -69,7 +69,7 @@ todo(){
 }
 
 directory_name(){
-  echo "%{$fg_bold[cyan]%}%3~%\/%{$reset_color%}"
+  echo "%{$fg_bold[cyan]%}%5~%\/%{$reset_color%}"
 }
 
 export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
