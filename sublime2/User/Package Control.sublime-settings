@@ -1,0 +1,13 @@
+{
+	"auto_upgrade_last_run": 1341490399,
+	"installed_packages":
+	[
+		"DetectSyntax",
+		"Git",
+		"google-search",
+		"Package Control",
+		"sublime-closure-linter",
+		"sublime-github",
+		"sublimelint"
+	]
+}
