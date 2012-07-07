@@ -2,12 +2,20 @@
 	"auto_upgrade_last_run": 1341593959,
 	"installed_packages":
 	[
+		"Package Control",
+		"BeautifyRuby",
+		"BracketHighlighter",
 		"DetectSyntax",
 		"Git",
 		"google-search",
+		"jQuery Snippets pack",
 		"Package Control",
+		"RSpec",
+		"Shell Turtlestein",
 		"sublime-closure-linter",
 		"sublime-github",
-		"sublimelint"
+		"sublimelint",
+		"SublimeLinter",
+		"ZenCoding"
 	]
 }
