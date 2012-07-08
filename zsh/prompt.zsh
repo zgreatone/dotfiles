@@ -80,4 +80,5 @@ set_prompt () {
 precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
+  _z --add "$(pwd -P)"
 }
