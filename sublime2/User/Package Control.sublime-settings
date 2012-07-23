@@ -1,16 +1,16 @@
 {
-	"auto_upgrade_last_run": 1341593959,
+	"auto_upgrade_last_run": 1343019336,
 	"installed_packages":
 	[
-		"Package Control",
 		"BeautifyRuby",
 		"BracketHighlighter",
 		"DetectSyntax",
 		"Git",
-		"google-search",
 		"jQuery Snippets pack",
 		"Package Control",
+		"Pretty JSON",
 		"RSpec",
+		"RSpec (snippets and syntax)",
 		"Shell Turtlestein",
 		"sublime-closure-linter",
 		"sublime-github",
