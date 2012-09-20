@@ -55,3 +55,6 @@ compinit
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
+
+source /home/revath/.phpbrew/bashrc
+export PHPBREW_SET_PROMPT=1
