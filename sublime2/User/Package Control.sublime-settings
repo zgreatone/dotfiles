@@ -1,11 +1,15 @@
 {
-	"auto_upgrade_last_run": 1343019336,
+	"auto_upgrade_last_run": 1348152971,
 	"installed_packages":
 	[
 		"BeautifyRuby",
 		"BracketHighlighter",
+		"CoffeeScript",
 		"DetectSyntax",
+		"DocBlockr",
 		"Git",
+		"google-search",
+		"Jasmine",
 		"jQuery Snippets pack",
 		"Package Control",
 		"Pretty JSON",
