@@ -15,7 +15,12 @@
       "rules": [
         {"file_name": ".*\\.coffee$"}
       ]
+    },
+    {
+      "name": "YAML",
+      "rules": [
+        {"file_name": ".*\\.yml(\\.example)?$"}
+      ]
     }
-
 	]
 }

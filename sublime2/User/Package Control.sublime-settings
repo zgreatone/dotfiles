@@ -1,26 +1,27 @@
 {
-	"auto_upgrade_last_run": 1349787287,
+	"auto_upgrade_last_run": 1353644332,
 	"installed_packages":
 	[
+		"Backbone.js",
 		"BeautifyRuby",
 		"BracketHighlighter",
 		"CoffeeScript",
 		"DetectSyntax",
 		"DocBlockr",
+		"EditorConfig",
+		"EJS",
+		"Emmet",
 		"Git",
-		"google-search",
 		"Jasmine",
 		"jQuery Snippets pack",
 		"Package Control",
 		"Pretty JSON",
 		"RSpec",
-		"RSpec (snippets and syntax)",
 		"Shell Turtlestein",
 		"SideBarEnhancements",
 		"sublime-closure-linter",
 		"sublime-github",
-		"sublimelint",
-		"SublimeLinter",
-		"ZenCoding"
+		"SublimeCodeIntel",
+		"SublimeLinter"
 	]
 }
