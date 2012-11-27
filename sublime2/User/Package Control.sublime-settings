@@ -1,5 +1,4 @@
 {
-	"auto_upgrade_last_run": 1353644332,
 	"installed_packages":
 	[
 		"Backbone.js",
@@ -17,10 +16,8 @@
 		"Package Control",
 		"Pretty JSON",
 		"RSpec",
-		"Shell Turtlestein",
 		"SideBarEnhancements",
 		"sublime-closure-linter",
-		"sublime-github",
 		"SublimeCodeIntel",
 		"SublimeLinter"
 	]
