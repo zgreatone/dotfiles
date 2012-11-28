@@ -10,6 +10,22 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 IRB.conf[:AUTO_INDENT] = true
 
+# don't save duplicates
+IRB.conf[:AT_EXIT].unshift Proc.new {
+  no_dups = []
+  Readline::HISTORY.each_with_index { |e,i|
+    begin
+      no_dups << e if Readline::HISTORY[i] != Readline::HISTORY[i+1]
+      rescue IndexError
+    end
+  }
+  Readline::HISTORY.clear
+  no_dups.each { |e|
+    Readline::HISTORY.push e
+  }
+}
+
+
 class Object
   # list methods which aren't in superclass
   def local_methods(obj = self)
@@ -38,3 +54,8 @@ end
 def r
   reload!
 end
+
+# Use Pry everywhere
+require 'pry'
+Pry.start
+exit
