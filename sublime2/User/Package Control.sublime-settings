@@ -1,15 +1,14 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Backbone.js",
 		"BeautifyRuby",
 		"BracketHighlighter",
 		"CoffeeScript",
-		"DetectSyntax",
 		"DocBlockr",
 		"EditorConfig",
 		"EJS",
-		"Emmet",
 		"Git",
 		"Jasmine",
 		"jQuery Snippets pack",
@@ -17,8 +16,6 @@
 		"Pretty JSON",
 		"RSpec",
 		"SideBarEnhancements",
-		"sublime-closure-linter",
-		"SublimeCodeIntel",
 		"SublimeLinter"
 	]
 }
