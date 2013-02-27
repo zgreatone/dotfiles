@@ -2,6 +2,7 @@
 	"auto_complete_selector": "source - comment",
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
