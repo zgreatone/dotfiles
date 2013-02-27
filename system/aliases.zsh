@@ -8,3 +8,4 @@
 #   alias ll="gls -l --color"
 #   alias la='gls -A --color'
 # fi
+alias p8="ping 8.8.8.8"
