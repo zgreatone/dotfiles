@@ -3,3 +3,13 @@
 *~
 *.swp
 *.rbc
+
+#eclipse stuff
+.classpath
+.project
+.settings
+.springBeans
+
+#xcode
+igor.xcuserdatad
+xcuserdata
