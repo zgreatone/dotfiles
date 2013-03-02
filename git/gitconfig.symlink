@@ -1,16 +1,16 @@
 # Sample gitconfig
 #
-# You probably want to change the [user] section here since you are not me.
 
 [hub]
         protocol = https
 [user]
-        name = Zach Holman
-        email = zach@zachholman.com
+        name = Igor Semenko
+        email = igor@zoomdata.com
 [credential]
         helper = osxkeychain
 [alias]
         co = checkout
+        st = status
         promote = !$DOTFILES/bin/git-promote
         wtf     = !$DOTFILES/bin/git-wtf
         rank-contributers = !$DOTFILES/bin/git-rank-contributers
