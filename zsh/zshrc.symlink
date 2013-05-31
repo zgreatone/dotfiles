@@ -6,6 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="fino"
+ZSH_THEME="robbyrussell"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -31,7 +32,6 @@
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(bundler rails3 ruby rvm npm node)
 
-source $ZSH/oh-my-zsh.sh
 
 # shortcut to this dotfiles path is $DOT
 export DOTFILES=$HOME/.dotfiles
@@ -56,8 +56,23 @@ fi
 # load every completion after autocomplete loads
 # for config_file ($DOTFILES/**/completion.sh) source $config_file
 
-# oh-my-zsh configuration
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
-
 source $ZSH/oh-my-zsh.sh
+unsetopt correct
+
+## line prefix search
+up-line-or-search-prefix () {
+   local CURSOR_before_search=$CURSOR
+   zle up-line-or-search "$LBUFFER"
+   CURSOR=$CURSOR_before_search
+}
+zle -N up-line-or-search-prefix
+ 
+down-line-or-search-prefix () {
+  local CURSOR_before_search=$CURSOR
+  zle down-line-or-search "$LBUFFER"
+  CURSOR=$CURSOR_before_search
+}
+zle -N down-line-or-search-prefix
+  
+bindkey "^[[B" down-line-or-search-prefix
+bindkey "^[[A" up-line-or-search-prefix

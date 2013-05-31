@@ -1,0 +1,2 @@
+echo "Usage add-my-pub-key <path to amazon key> <user@server>"
+cat .ssh/id_rsa.pub | ssh -i $1 $2 'cat >> .ssh/authorized_keys'

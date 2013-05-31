@@ -1,3 +1,4 @@
-export PATH="./bin:/usr/local/sbin:/usr/local/storm/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$DOTFILES/bin:$PATH"
+CELLAR=/usr/local/Cellar
+export PATH="./bin:/usr/local/sbin:/usr/local/storm/bin:$CELLAR/phantomjs/1.7.0:/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:$PATH"
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"

@@ -1,0 +1,2 @@
+#!/bin/sh
+kill -9 `ps -axe | grep tomcat | grep java | awk '{print $1}'`
