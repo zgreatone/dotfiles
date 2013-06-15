@@ -52,7 +52,7 @@ inoremap <Up> <C-o>gk
 set ruler                  " show the cursor position all the time
 set noshowcmd              " don't display incomplete commands
 set nolazyredraw           " turn off lazy redraw
-set number                 " line numbers
+" set number                 " line numbers
 set wildmenu               " turn on wild menu
 set wildmode=list:longest,full
 set ch=2                   " command line height
@@ -72,9 +72,13 @@ set mat=5                  " duration to show matching brace (1/10 sec)
 set incsearch              " do incremental searching
 set laststatus=2           " always show the status line
 set ignorecase             " ignore case when searching
-set nohlsearch             " don't highlight searches
+" set nohlsearch             " don't highlight searches
+set hlsearch
 set visualbell             " shut the fuck up
 
+:syntax enable
+:colorscheme molokai
+"let g:molokai_original = 1
 
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
