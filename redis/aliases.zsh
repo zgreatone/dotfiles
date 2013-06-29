@@ -1,1 +1,0 @@
-alias redis-down='killall redis-server'
