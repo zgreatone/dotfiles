@@ -16,6 +16,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias httpflow="sudo tcpflow -c -i lo0 src or dst host localhost and port 8080"
 
 # Trim new lines and copy to clipboard
 alias trimcopy="tr -d '\n' | pbcopy"

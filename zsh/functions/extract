@@ -16,10 +16,12 @@ function extract() {
 		fi
 		mkdir -p "$foldername" && cd "$foldername"
 		case $1 in
+		    *.dmg) hdiutil mount $fullpath ;;
 			*.tar.bz2) tar xjf "$fullpath" ;;
 			*.tar.gz) tar xzf "$fullpath" ;;
 			*.tar.xz) tar Jxvf "$fullpath" ;;
 			*.tar.Z) tar xzf "$fullpath" ;;
+			*.gz) gunzip $fullpath ;;
 			*.tar) tar xf "$fullpath" ;;
 			*.taz) tar xzf "$fullpath" ;;
 			*.tb2) tar xjf "$fullpath" ;;
@@ -27,7 +29,13 @@ function extract() {
 			*.tbz2) tar xjf "$fullpath" ;;
 			*.tgz) tar xzf "$fullpath" ;;
 			*.txz) tar Jxvf "$fullpath" ;;
-			*.zip) unzip "$fullpath" ;;
+            *.bz2) bunzip2 "$fullpath"  ;;
+            *.zip) unzip "$fullpath" ;;
+            *.ZIP) unzip "$fullpath" ;;
+            *.pax) cat $fullpath | pax -r ;;
+            *.pax.Z) uncompress $fullpath --stdout | pax -r  ;;
+            *.Z) uncompress $fullpath ;;
+            *.rar) unrar x "$fullpath" ;;
 			*) echo "'$1' cannot be extracted via extract()" && cd .. && ! $didfolderexist && rm -r "$foldername" ;;
 		esac
 	else
