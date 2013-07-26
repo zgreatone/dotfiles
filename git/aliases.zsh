@@ -12,6 +12,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(y
 alias gls= 'git log --pretty=format:"%C(reset)%h %C(yellow)%ad%C(yellow)%d %C(reset)%s%C(green) [%cn]" --decorate --date=short'
 alias gp='git push origin HEAD'
 alias gpr='git pull --rebase'
+alias gpl='git pull'
 alias gd='git diff'
 alias gc='git commit -m'
 alias gca='git commit -a'
