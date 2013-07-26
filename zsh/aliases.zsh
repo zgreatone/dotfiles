@@ -2,7 +2,11 @@ alias reload!='. ~/.zshrc'
 
 alias myip="curl -s icanhazip.com"
 
+#cat with syntax highlighting
 alias c='~/tools/pygments/pygmentize -O style=monokai -f console256 -g'
+# Quick search in a directory for a string. use -iru to search directories ack usually ignores (like .git)
+alias s='ack -i'
+
 
 alias hosts='sudo $EDITOR /etc/hosts'
 #list only directories
