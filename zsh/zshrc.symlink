@@ -29,7 +29,7 @@ ZSH_THEME="clean"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler npm node zsh-syntax-highlighting)
+plugins=(git npm node zsh-syntax-highlighting mvn)
 
 #important to keep oh-my-zsh before loading *.zsh
 source $ZSH/oh-my-zsh.sh
