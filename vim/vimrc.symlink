@@ -14,24 +14,24 @@ set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
 set formatoptions+=n       " support for numbered/bullet lists
-"set textwidth=80           " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
-set pastetoggle=<F2>
+"set pastetoggle=<F2>
+"set paste
 
 " ----------------------------------------------------------------------------
 "  Remapping
 " ----------------------------------------------------------------------------
 
 " lead with ,
-let mapleader = ","
+"let mapleader = ","
 
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
 
 
 " reflow paragraph with Q in normal and visual mode
-nnoremap Q gqap
-vnoremap Q gq
+"nnoremap Q gqap
+"vnoremap Q gq
 
 " sane movement with wrap turned on
 nnoremap j gj
@@ -72,7 +72,6 @@ set mat=5                  " duration to show matching brace (1/10 sec)
 set incsearch              " do incremental searching
 set laststatus=2           " always show the status line
 set ignorecase             " ignore case when searching
-" set nohlsearch             " don't highlight searches
 set hlsearch
 set visualbell             " shut the fuck up
 
@@ -80,11 +79,3 @@ set visualbell             " shut the fuck up
 :colorscheme molokai
 "let g:molokai_original = 1
 
-" ---------------------------------------------------------------------------
-"  Strip all trailing whitespace in file
-" ---------------------------------------------------------------------------
-
-function! StripWhitespace ()
-    exec ':%s/ \+$//gc'
-endfunction
-map ,s :call StripWhitespace ()<CR>
