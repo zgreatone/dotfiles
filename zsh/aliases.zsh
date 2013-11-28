@@ -1,7 +1,5 @@
 alias reload!='. ~/.zshrc'
 
-alias myip="curl -s icanhazip.com"
-
 #cat with syntax highlighting
 alias c='~/tools/pygments/pygmentize -O style=monokai -f console256 -g'
 # Quick search in a directory for a string. use -iru to search directories ack usually ignores (like .git)
@@ -13,6 +11,7 @@ alias hosts='sudo $EDITOR /etc/hosts'
 alias lsd='ls -l | grep "^d"'
 
 #network
+alias myip="curl -s icanhazip.com"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ipl="ifconfig|grep en0: -A 3"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -63,3 +62,8 @@ alias psa='ps -A'
 alias vg='vagrant'
 alias mz='mongo zoom'
 alias epoch='date -r$1'
+
+
+#suffix aliases
+alias -s conf=vim
+
