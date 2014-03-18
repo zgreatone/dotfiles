@@ -7,6 +7,7 @@ alias s='ack -i'
 
 
 alias hosts='sudo $EDITOR /etc/hosts'
+alias snippets='vim ~/.DOTFILES/snippets.txt'
 #list only directories
 alias lsd='ls -l | grep "^d"'
 
@@ -62,8 +63,12 @@ alias psa='ps -A'
 alias vg='vagrant'
 alias mz='mongo zoom'
 alias epoch='date -r$1'
+alias master='git checkout master'
+alias pull='git pull'
 
+alias diffdir='diff -qr $1 $2'
 
 #suffix aliases
 alias -s conf=vim
+alias -s xml=vim
 
