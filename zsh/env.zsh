@@ -1,7 +1,11 @@
 export EDITOR='subl'
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/CurrentJDK/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/CurrentJDK/Contents/Home
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+if [ -d $JAVA_HOME ]; then
+  export JAVA_HOME
+fi
 
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
