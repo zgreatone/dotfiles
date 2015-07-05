@@ -57,11 +57,9 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 
 alias t='multitail -F /usr/local/etc/multitail.conf -cS log4j -f $1'
 #alias zwl='multitail -F /usr/local/etc/multitail.conf -cS log4j -f /usr/local/apache-tomcat-7.0.40/logs/zoomdata-websocket.log'
-alias zw='tail -f /usr/local/apache-tomcat-7.0.40/logs/zoomdata-websocket.log|cut -d " " -f 2-'
-alias zwl='tail -f /usr/local/apache-tomcat-7.0.40/logs/zoomdata-websocket.log|~/tools/pygments.streaming/pygmentize -s -O style=monokai -f console256 -l json'
+alias zw='tail -f /usr/local/apache-tomcat-7.0.56/logs/zoomdata-websocket.log|cut -d " " -f 2-'
+alias zwl='tail -f /usr/local/apache-tomcat-7.0.56/logs/zoomdata-websocket.log|~/tools/pygments.streaming/pygmentize -s -O style=monokai -f console256 -l json'
 alias psa='ps -A'
-alias vg='vagrant'
-alias mz='mongo zoom'
 alias epoch='date -r$1'
 alias master='git checkout master'
 alias pull='git pull'
