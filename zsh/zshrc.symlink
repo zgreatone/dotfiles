@@ -29,7 +29,7 @@ ZSH_THEME="clean"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(history-substring-search z git brew extract mvn)
+plugins=(history-substring-search z git brew extract mvn boot2docker)
 
 #important to keep oh-my-zsh before loading *.zsh
 source $ZSH/oh-my-zsh.sh
