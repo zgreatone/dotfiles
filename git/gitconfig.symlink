@@ -23,6 +23,7 @@
 [core]
 	excludesfile = /Users/igor/.gitignore
         editor = vim
+	ignorecase = false
 [apply]
         whitespace = nowarn
 [mergetool]
