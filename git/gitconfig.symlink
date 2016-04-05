@@ -4,8 +4,8 @@
 [hub]
         protocol = https
 [user]
-        name = Igor Semenko
-        email = igor@zoomdata.com
+        name = Okpe Pessu
+        email = okpe@zoomdata.com
 [credential]
         helper = osxkeychain
 [alias]
@@ -21,7 +21,7 @@
         branch = auto
         ui = true
 [core]
-	excludesfile = /Users/igor/.gitignore
+	excludesfile = /Users/zgreatone/.gitignore
         editor = vim
 	ignorecase = false
 [apply]
